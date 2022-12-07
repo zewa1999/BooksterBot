@@ -143,7 +143,7 @@ static async Task SendBookedMail(BooksterBotSettings config)
 
     var email = await Email
     .From(config.GmailEmail)
-    .To("costachestelianandrei@gmail.com", "Andrei Costache")
+    .To("yourMail@gmail.com", "Andrei Costache")
     .Subject("Bookster BOT: The book was booked today!")
     .Body("The book  was booked today. <br> Find it in your library: https://library.bookster.ro/profile/reading")
     .SendAsync();
